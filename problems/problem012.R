@@ -5,7 +5,7 @@ triNum <- function(i){
 nDivisor <- function(n){
     lim <- floor(sqrt(n))
     div.vec <- c(1:lim)
-    nDiv <- 2 * sum(n%%div.vec == 0) - (n%%lim == 0)
+    nDiv <- 2 * sum(n%%div.vec == 0) - (n == lim^2)
     return(nDiv)
 }
 
